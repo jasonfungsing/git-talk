@@ -1,0 +1,372 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Git</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
+		<link href="impress.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div id="impress">
+			
+			<div id="slide1" class="step" data-x="0" data-y="0" data-scale="50">
+				<p style='font-size:80px'>Welcome!! Git!!</p>
+
+
+			</div>
+			
+			<div id="slide2" class="step" data-x="4000" data-y="4000">
+				<p style='width:1000px;font-size:60px;text-align:center'>Why need Git? We have SVN!</p>
+
+
+			</div>
+			
+			<div id="slide3" class="step" data-x="6000" data-y="-4000">
+				<h1 style='font-size:60px'>Case Light:</h1>
+				<P>You working on a complex task, you want to have several milestone records on your work without commit you partially finished code to trunk,  how do you achieve this?</p>
+			
+
+			</div>
+			
+			<div id="slide4" class="step" data-x="7000" data-y="-5000" data-scale="2">
+				<h1 style='font-size:70px'>Case Medium:</h1>
+				<p>You are in the middle of a new feature, and your boss asks you drop everything for a critical bug fix. What do you do? What do you do?!?</p>
+			
+			</div>
+			
+			<div id="slide5" class="step" data-x="9000" data-y="-7000" data-scale="4">
+				<h1 style='font-size:80px;color:red'>Case DEAD:</h1>
+				<p>The server you use for hosting SVN dead, by dead it means hard drive broken, data can not be recovery, what do you do now?<p>
+
+
+			</div>
+
+			
+			<div id="slide6" class="step" data-x="-4000" data-y="-4000" data-rotate-x="60" data-rotate-y="60" data-rotate-z="30">
+				<p style='font-size:80px'>So, Git, what is it?</p>
+
+
+			</div>
+			
+			<div id="slide7" class="step" data-x="-5000" data-y="-5000" >
+				<p>Git is one of </p>
+				<p><font color="red">Distributed Version Control System (DVCS)</font></p>
+
+
+			</div>
+
+			<div id="slide8" class="step" data-x="-6000" data-y="-6000" >
+				<p>How about SVN then?</p>
+
+				
+			</div>
+
+			<div id="slide9" class="step" data-x="-7000" data-y="-7000" >
+				<p>SVN is one of </p>
+				<p><font color="red">Centralized Version Control System</font></p>
+
+				
+			</div>
+
+			<div id="slide10" class="step" data-x="-7000" data-y="1000" data-rotate-x="90" data-rotate-y="90" data-rotate-z="40" >
+				<p>So, differences?</p>
+
+				
+			</div>
+
+			<div id="slide11" class="step" data-x="-7000" data-y="2000" >
+				<p>Centralized version control systems are based on the idea that there is a single "central" copy of your project somewhere (probably on a server), and programmers will "commit" their changes to this central copy.</p>
+
+				
+			</div>
+			
+			<div id="slide12" class="step" data-x="-7000" data-y="3000" >
+				<p>Distributed version control system (DVCS for short) does not necessarily rely on a central server to store all the versions of a project's files. Instead, every developer "clones" a copy of a repository and has the full history of the project on their own hard drive. This copy (or "clone") has all of the metadata of the original.</p>
+
+				
+			</div>
+
+			<div id="slide13" class="step" data-x="-7000" data-y="3500" data-scale="0.1" >
+				<p>Confused?</p>
+
+				
+			</div>
+
+			<div id="slide14" class="step" data-x="-7000" data-y="5000">
+				<img src="images/svn.png" height="500" width="563">
+				<p>SVN</p>
+
+				
+			</div>
+
+			<div id="slide15" class="step" data-x="-7000" data-y="6000">
+				<img src="images/git.png" height="750" width="588">
+				<p>Git</p>
+
+				
+			</div>
+
+			<div id="slide16" class="step" data-x="1000" data-y="3000">
+				<p style='font-size:50px;'>So, Git States</p>
+				<p style='font-size:30px;color:red'>something important</font></p>
+				
+
+			</div>
+
+
+			<div id="slide17" class="step" data-x="1000" data-y="4000">
+				<p style='font-size:40px'>Git has three main states that your files can reside in:</p>
+				<p style='font-size:50px;color:green'>Committed</p> <p style='font-size:30px;'> means that the data is safely stored in your local database. </p>
+				<p style='font-size:50px;color:green'>Modified</p> <p style='font-size:30px;'> means that you have changed the file but have not committed it to your database yet.  </p>
+				<p style='font-size:50px;color:green'>Staged</p> <p style='font-size:30px;'> means that you have marked a modified file in its current version to go into your next commit snapshot.  </p>	
+				
+				
+			</div>
+
+			<div id="slide18" class="step" data-x="1000" data-y="5000">
+				<p>Graph?</p>
+
+
+			</div>
+
+			<div id="slide19A" class="step" data-x="2000" data-y="6000">
+				<img src="images/states.png" height="750" width="690">
+
+
+			</div>
+
+			<div id="slide19B" class="step" data-x="3000" data-y="7000">
+				<img src="images/file_status.png" height="476" width="750">
+
+
+			</div>
+
+
+			<div id="slide20" class="step" data-x="1000" data-y="5000" data-rotate-x="270" data-rotate-y="270" data-rotate-z="180" data-scale="0.5" >
+				<p>Trunk? Tags? Branches?</p>
+
+
+			</div>
+
+			<div id="slide21" class="step" data-x="-8000" data-y="1000">
+				<p style='font-size:150px;color:RED'>Clear whatever svn in you brain now</p>
+
+
+			</div>
+
+			<div id="slide22" class="step" data-x="-8000" data-y="2000" data-scale="0.5" >
+				<p>Let's start from scratch</p>
+
+
+			</div>
+
+			<div id="slide23" class="step" data-x="-9000" data-y="2000">
+				<p>A question though, have you ever use bookmark before?</p>
+
+
+			</div>
+
+			<div id="slide24" class="step" data-x="-9000" data-y="2500">
+				<p>Ok,ok, geek language. Pointer in C...</p>
+
+
+			</div>
+
+			<div id="slide25" class="step" data-x="-9000" data-y="3300">
+				<p>Snapshot</p>
+
+			</div>
+
+			<div id="slide26" class="step" data-x="-10000" data-y="4000">
+				<img src="images/branch1.png" height="377" width="750">
+
+			</div>
+
+			<div id="slide27" class="step" data-x="-10000" data-y="5000">
+				<p>What is the master in previous slide?</p>
+
+			</div>
+
+			<div id="slide28" class="step" data-x="-10000" data-y="5100" data-scale="0.1">
+				<p>The default branch name in Git is master</p>
+
+			</div>
+
+			<div id="slide29" class="step" data-x="-10000" data-y="6000">
+				<p>So, branch and tag are just like master, a pointer, which point to a snapshot</p>
+
+			</div>
+
+			<div id="slide30" class="step" data-x="-11000" data-y="7000">
+				<p style='font-size:30px;text-align:left'>git branch testing</p>
+				<img src="images/branch2.png" height="335" width="683">
+
+
+			</div>
+
+
+			<div id="slide31" class="step" data-x="-11000" data-y="8000">
+				<p>How does Git know what branch you’re currently on?</p>
+
+			</div>
+
+			<div id="slide32" class="step" data-x="-11000" data-y="9000">
+				<p>A pointer, name : HEAD</p>
+
+			</div>
+
+			<div id="slide33" class="step" data-x="-11000" data-y="10000">
+				<img src="images/branch3.png" height="465" width="668">
+
+
+			</div>
+
+			<div id="slide34" class="step" data-x="-11000" data-y="11000">
+				<p style='font-size:30px;text-align:left'>git checkout testing</p>
+				<img src="images/branch4.png" height="465" width="588">
+
+
+			</div>
+			
+			<div id="slide35" class="step" data-x="-11000" data-y="12000">
+				<img src="images/branch5.png" height="431" width="750">
+
+
+			</div>
+
+			<div id="slide36" class="step" data-x="-11000" data-y="13000">
+				<p>Here comes the question, what if you want to switch to work on master branch</p>
+
+
+			</div>
+
+			<div id="slide37" class="step" data-x="-11000" data-y="14000">
+				<p style='font-size:30px;text-align:left'>git checkout master</p>
+				<img src="images/branch6.png" height="431" width="750">
+
+
+			</div>
+
+			<div id="slide38" class="step" data-x="-11000" data-y="14750" data-scale="2" >
+				<p>1.It moved the HEAD pointer back to point to the master branch</p>
+				<p>2.It reverted the files in your working directory back to the snapshot that master points to</p>
+
+
+			</div>
+
+			<div id="slide39" class="step" data-x="-11000" data-y="16000">
+				<img src="images/branch7.png" height="573" width="750">
+
+
+			</div>
+
+
+			<div id="slide40" class="step" data-x="-11000" data-y="-8000" data-rotate-x="270" data-rotate-y="270" data-rotate-z="180">
+				<p style='font-size:130px;text-align:center'>Merge!!</p>
+
+			</div>
+
+			<div id="slide41A" class="step" data-x="-11000" data-y="-9000">
+				<img src="images/merge1.png" height="230" width="450">
+
+
+			</div>
+
+			<div id="slide41B" class="step" data-x="-11000" data-y="-10000">
+				<img src="images/merge2.png" height="372" width="450">
+
+
+			</div>
+
+			<div id="slide41C" class="step" data-x="-11000" data-y="-11000">
+				<img src="images/merge3.png" height="374" width="620">
+
+
+			</div>
+
+			<div id="slide41D" class="step" data-x="-11000" data-y="-12000">
+				<img src="images/merge4.png" height="506" width="622">
+
+
+			</div>
+
+			<div id="slide41E" class="step" data-x="-11000" data-y="-13000">
+				<img src="images/merge5.png" height="610" width="620">
+
+
+			</div>
+
+			<div id="slide41F" class="step" data-x="-11000" data-y="-14000">
+				<img src="images/merge6.png" height="492" width="776">
+
+
+			</div>
+
+			<div id="slide41G" class="step" data-x="-11000" data-y="-15000">
+				<img src="images/merge7.png" height="862" width="1000">
+
+
+			</div>
+
+			<div id="slide41H" class="step" data-x="-11000" data-y="-16000">
+				<img src="images/merge8.png" height="468" width="882">
+
+
+			</div>
+
+			<div id="slide42" class="step" data-x="20000" data-y="20000" data-rotate-x="270" data-rotate-y="270" data-rotate-z="180">
+				<p style='font-size:80px;text-align:center'>Stash</p>
+				<p style='font-size:40px;text-align:right'>what is it?</p>
+
+
+			</div>
+
+			<div id="slide43" class="step" data-x="19000" data-y="21000" data-rotate-x="270" data-rotate-y="270" data-rotate-z="180">
+				<p>Stashing takes the dirty state of your working directory — that is, your modified tracked files and staged changes — and saves it on a stack of unfinished changes that you can reapply at any time.</p>
+
+
+			</div>
+
+			<div id="slide44" class="step" data-x="22000" data-y="22000" data-rotate-x="180" data-rotate-y="180" data-rotate-z="135">
+				<p style='font-size:60px;text-align:center'>Stop talking sh*t, how we can start use git</p>
+
+
+			</div>
+
+			<div id="slide45" class="step" data-x="23000" data-y="23000" data-rotate-x="180" data-rotate-y="180" data-rotate-z="135">
+				<p>Git provided an official tool</p>
+				<p style='font-size:80px;text-align:center'>git svn --help </p>
+
+
+			</div>
+
+			<div id="slide45" class="step" data-x="24000" data-y="24000" data-rotate-x="210" data-rotate-y="210" data-rotate-z="210">
+				<p style='font-size:60px;text-align:center'>References & Resources</p>
+				<p>Pro Git Book</p>
+				<p>git-scm.com</p>
+
+
+			</div>
+
+
+
+
+
+			
+
+
+			
+
+
+
+
+
+
+
+
+
+
+		</div>
+		<script type="text/javascript">impress().init();</script>
+		<script type="text/javascript" src="impress.js"></script>
+	</body>
+</html>
